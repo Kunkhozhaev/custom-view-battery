@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryChargeState">
+        <attr name="batteryPercent" format="integer" />
+        <attr name="batteryCriticalPercent" format="integer" />
+        <attr name="batteryPercentColor" format="color" />
+        <attr name="batteryStrokeColor" format="color" />
+    </declare-styleable>
+
+    <attr name="batteryChargeStateStyle" format="reference" />
+
+    <style name="BatteryChargeStateStyle">
+        <item name="batteryPercentColor">@color/green</item>
+        <item name="batteryStrokeColor">@color/black</item>
+        <item name="batteryPercent">0</item>
+        <item name="batteryCriticalPercent">30</item>
+    </style>
+</resources>

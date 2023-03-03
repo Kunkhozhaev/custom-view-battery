@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CustomView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:toolbarStyle">@style/MyToolbar</item>
+        <item name="batteryChargeStateStyle">@style/MyCustomViewStyle</item>
+    </style>
+
+    <style name="MyCustomViewStyle" parent="BatteryChargeStateStyle">
+        <item name="batteryStrokeColor">@color/white</item>
+    </style>
+
+    <style name="MyToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/purple_500</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:title">@string/toolbarTitle</item>
+        <item name="android:titleTextAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">144dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="backgroundTint">@color/purple_700</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+</resources>
